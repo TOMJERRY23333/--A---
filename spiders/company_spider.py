@@ -54,15 +54,4 @@ class CompanySpider(Spider):
             yield item
 
 
-        # dic = json.loads(response.text)
-        # list = dic['data']['list']
-        # for i in list:
-        #     item = BilibiliItem()
-        #     item['title'] = i['title']
-        #     item['author'] = i['owner']['name']
-        #     item['coin'] = i['stat']['coin']
-        #     item['bvid'] = i['bvid']
-        #     item['dynamic'] = i['dynamic'].replace('\n', '')
-        #     item['url'] = self.base_url + '/video/' + item['bvid']
-        #     yield Request(item['url'] + '?vd_source=65aa9381fce2b80aa78e4f2be0b3e7c6', callback=self.parse_file,
-        #                   meta={'item': item}, headers=headers)
+
